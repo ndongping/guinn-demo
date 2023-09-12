@@ -6,6 +6,7 @@
   </div>
 </template>
 <script setup>
+console.log(import.meta.env.VITE_APP_BASE_API)
 import { useRouter } from "vue-router";
 import { Button } from 'vant';
 import useDemoStore from '@/store/modules/demo';
