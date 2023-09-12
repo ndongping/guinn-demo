@@ -12,12 +12,24 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
-
   css: {
+    // css预处理器
     preprocessorOptions: {
       scss: {
-        additionalData: `@import '@/assets/styles/main.scss';`
+        additionalData: '@import "@/assets/styles/main.scss";',
+      },
+    },
+  },
+  server: {
+    port: 80,
+    host: true,
+    open: true,
+    proxy: {
+      '/dev-api': {
+        target: 'https://apiuat.sisley.com.cn',
+        changeOrigin: true,
+        rewrite: (p) => p.replace(/^\/dev-api/, '')
       }
     }
-  }
+  },
 });
