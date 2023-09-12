@@ -1,12 +1,12 @@
 <template>
     <div class="about">
-      <h1 class="h1">This is an about page</h1>
-      <Button>hahaha</Button>
+      <h1 class="h1">{{demoStore.count}}</h1>
     </div>
   </template>
   <script setup>
   import {getProduct} from "@/api/product";
-  import { Button } from 'vant';
+import useDemoStore from '@/store/modules/demo';
+const demoStore = useDemoStore();
   
   function getProductInfo() {
     // getProduct({ids: 315}).then(res => {

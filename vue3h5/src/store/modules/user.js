@@ -1,4 +1,5 @@
 import { getToken, setToken, removeToken } from '@/utils/auth'
+import {defineStore} from 'pinia'
 
 const useUserStore = defineStore(
   'user',
