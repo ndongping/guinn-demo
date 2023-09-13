@@ -1,25 +1,13 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router';
+import routes from './routes';
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [
-    {
-      path: '/',
-      name: 'index',
-      redirect:'demo2',
-      component: () => import('@/views/Index.vue')
-    },
-    {
-      path: '/demo',
-      name: 'demo',
-      component: () => import('@/views/Demo.vue')
-    },
-    {
-      path: '/demo2',
-      name: 'demo2',
-      component: () => import('@/views/Demo2.vue')
-    },
-  ]
-})
+  history: createWebHashHistory(import.meta.env.VITE_APP_BASE_API),
+  routes: routes,
+});
 
-export default router
+router.beforeEach(async (_to, _from, next) => {
+  next();
+});
+
+export default router;
