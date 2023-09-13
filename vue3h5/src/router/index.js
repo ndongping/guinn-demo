@@ -1,8 +1,8 @@
-import { createRouter, createWebHashHistory } from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router';
 import routes from './routes';
 
 const router = createRouter({
-  history: createWebHashHistory(import.meta.env.VITE_APP_BASE_API),
+  history: createWebHistory(),
   routes: routes,
 });
 
