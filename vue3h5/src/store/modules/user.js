@@ -1,12 +1,17 @@
 import { getToken, setToken, removeToken } from "@/utils/auth";
 import { defineStore } from "pinia";
 
-const useUserStore = defineStore("user", {
+const userStore = defineStore("user", {
   state: () => ({
     token: getToken(),
     name: "",
+    /** 登录前访问页面 */
+    landPageRoute: '',
   }),
   actions: {
+    setLandPage(route) {
+      this.landPageRoute = route
+    },
     // 登录
     login(userInfo) {
       const username = userInfo.username.trim();
@@ -15,6 +20,7 @@ const useUserStore = defineStore("user", {
       const uuid = userInfo.uuid;
       return new Promise((resolve, reject) => {});
     },
+    setToken(token) { },
     // 获取用户信息
     getInfo() {
       return new Promise((resolve, reject) => {});
@@ -36,4 +42,4 @@ const useUserStore = defineStore("user", {
   },
 });
 
-export default useUserStore;
+export default userStore;
