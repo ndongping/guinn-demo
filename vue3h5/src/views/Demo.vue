@@ -4,14 +4,15 @@
     </div>
   </template>
   <script setup>
-  import {getProduct} from "@/api/product";
+  import {getProduct, getPop} from "@/api/product";
 import useDemoStore from '@/store/modules/demo';
 const demoStore = useDemoStore();
   
   function getProductInfo() {
-    // getProduct({ids: 315}).then(res => {
-    //   console.log(res)
-    // })
+    getProduct({ids: 315}).then(res => {
+      console.log(res)
+    })
+    getPop()
   }
   getProductInfo()
   </script>
