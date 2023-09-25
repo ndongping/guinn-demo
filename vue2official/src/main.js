@@ -3,8 +3,8 @@ import App from "./App.vue";
 import store from './store'
 import router from "./router";
 import Vant from 'vant';
-import '@/assets/styles/index.scss' 
 import 'vant/lib/index.css';
+import '@/assets/styles/index.scss'
 
 Vue.use(Vant);
 

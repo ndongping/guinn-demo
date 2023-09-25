@@ -1,12 +1,15 @@
 import { getToken, setToken, removeToken } from '@/utils/auth'
 
 const user = {
+  namespaced: true,
   state: {
     token: getToken(),
     name: '',
     avatar: '',
     roles: [],
-    permissions: []
+    permissions: [],
+    /** 登录前访问页面 */
+    landPageRoute: '',
   },
 
   mutations: {
@@ -24,10 +27,17 @@ const user = {
     },
     SET_PERMISSIONS: (state, permissions) => {
       state.permissions = permissions
+    },
+    SET_LANDPAGEROUTE: (state, link) => {
+      state.landPageRoute = link;
     }
   },
 
   actions: {
+    setStateToken({ commit }, token) {
+      setToken(token);
+      commit('SET_TOKEN', token);
+    },
     // 登录
     Login({ commit }, userInfo) {
       const username = userInfo.username.trim()
@@ -69,4 +79,4 @@ const user = {
   }
 }
 
-export default user
+export default user;

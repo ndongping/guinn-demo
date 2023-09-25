@@ -11,6 +11,10 @@ const router = new VueRouter({
   routes,
 });
 
+const originalPush = VueRouter.prototype.push
+VueRouter.prototype.push = function push(location) {
+  return originalPush.call(this, location).catch(err => err)
+}
 router.beforeEach(async (to, from, next) => {
   document.title = to.meta.title ?? "微信公众号开发";
   if (to?.meta?.requiresAuth && !getToken()) {

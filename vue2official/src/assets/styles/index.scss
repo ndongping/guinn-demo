@@ -1,15 +1,149 @@
+@import "./font.scss";
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    color: rgba(0, 0, 0, 0.88);
-    font-size: 14px;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body,
+div,
+button,
+span,
+input,
+select,
+textarea {
+  font-size: 14px;
+  // font-family: HarmonyOS, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+  font-family:  Microsoft YaHei,微软雅黑,PingFang SC,Helvetica Neue,Helvetica,Hiragino Sans GB,Arial,sans-serif;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+  vertical-align: top;
+}
+
+// 修改vant默认样式
+
+// 按钮样式
+.btn {
+  .van-button__text {
+    font-weight: 500;
+  }
+}
+.van-button--primary {
+  background-color: $color-base;
+  border: 1px solid $color-base;
+}
+
+.van-button--default {
+  color: #000;
+  background-color: $color-green;
+  border: 1px solid $color-base;
+}
+
+// 表单样式
+.cy-form {
+  padding: 0 40px;
+
+  .van-cell {
+    display: block;
+    padding: 31px 0 9px;
+    background-color: transparent;
+    &::after {
+      border-bottom: 1px solid #acacac;
+      left: 0;
+    }
+    .van-field__label {
+      margin-bottom: 9px;
+      width: 100%;
+      span {
+        color: #000;
+      }
+
+    }
+    .van-field__control {
+      padding-left: 9px;
+      color: #555554;
+    }
+  }
+
+  .btn-view {
+    width: 100%;
+    padding-top: 40px;
+  }
+}
+
+.btn {
+  border-radius: 90px;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+  text-indent: 2px;
+  .van-button__text {
+    // font-family: HarmonyOS;
+    font-weight: 500;
+  }
+}
+
+
+// 弹框
+.van-popup {
+  background-color: transparent;
+}
+
+.pup-content {
+  width: 348px;
+  height: 247px;
+  background-image: url('../icons/pup-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 43px 40px 0;
+  .pup-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .icon {
+      width: 34px;
+      img {
+        vertical-align: top;
+      }
+    }
+    .title {
+      margin-left: 14px;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-indent: 2px;
+    }
+  }
+  .desc {
+    font-size: 16px;
+    text-align: center;
+    padding: 18px 0 22px;
+    letter-spacing: 1px;
+  }
+  .tips {
+    text-align: center;
+    span {
+      color: #888888;
+      &:last-of-type {
+        text-decoration: underline;
+      }
+    }
+  }
+  .pop-btn {
+    position: absolute;
+    width: 270px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 32px;
+    margin-bottom: 0;
+  }
 }

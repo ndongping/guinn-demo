@@ -30,7 +30,7 @@ export function updateGenTable(data) {
   return request({
     url: '/tool/gen',
     method: 'put',
-    data: data
+    params: data
   })
 }
 
