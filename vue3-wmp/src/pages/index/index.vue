@@ -1,15 +1,10 @@
 <template>
   <view class="index">
-    <Navbar />
-    test
-    test
-    test
-    test
-    test
-    test
-    test
-    test
-    test
+    <Navbar background="pink">
+      <template>
+        <h1>Here might be a page title</h1>
+      </template>
+    </Navbar>
     <button @Tap="handleJump">跳转</button>
   </view>
 </template>
@@ -19,12 +14,7 @@ import './index.scss'
 import Navbar from '@/components/common/Navbar.vue';
 import { navigateTo } from '@tarojs/taro';
 
-function  add() {
-  console.log(12341234)
-}
-add()
-
-function handleJump() {
+const handleJump = () => {
   navigateTo({
     url: '/pages/demo/index',
   })

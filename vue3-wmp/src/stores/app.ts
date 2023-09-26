@@ -24,6 +24,7 @@ export const useAppStore = defineStore('app', {
       return {
         /** 头部导航高度 */
         custonBarHeight,
+        statusBarHeight,
         leftWidth,
         centerWidth,
         padLeft,
