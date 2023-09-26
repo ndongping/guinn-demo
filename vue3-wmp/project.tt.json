@@ -1,0 +1,13 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "vue3-wmp",
+  "description": "vue3-wmp",
+  "appid": "touristappid",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram"
+}

@@ -1,0 +1,49 @@
+{
+  "miniprogramRoot": "dist/",
+  "projectname": "vue3-wmp",
+  "description": "vue3-wmp",
+  "appid": "wx78a5a8ac10157c80",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "enhance": false,
+    "compileHotReLoad": false,
+    "postcss": false,
+    "minified": false,
+    "useCompilerPlugins": [
+      "sass"
+    ],
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    }
+  },
+  "compileType": "miniprogram",
+  "libVersion": "3.1.1",
+  "srcMiniprogramRoot": "dist/",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "condition": {
+
+    "miniprogram": {
+      "current": 1636960034308,
+      "list": [
+          {
+              "id": 1636960034308,
+              "name": "demo",
+              "pathName": "pages/demo/index",
+              "query": "",
+              "scene": "990001"
+          }
+
+      ]
+  }
+  },
+  "editorSetting": {
+    "tabIndent": "auto",
+    "tabSize": 2
+  }
+}

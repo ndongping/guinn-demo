@@ -1,0 +1,51 @@
+view,
+text,
+button,
+input,
+textarea,
+scroll-view,
+navigator {
+  box-sizing: border-box;
+  font-family: 'SourceHanSansCN Regular', 'PingFang SC';
+  color: #000000;
+  font-size: 28rpx;
+}
+
+input,
+textarea {
+  text-transform: none;
+}
+
+image {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: visible;
+}
+
+video {
+  width: 100%;
+}
+
+scroll-view {
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+  }
+}
+
+.c-btn {
+  background: unset;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::after {
+    border: unset;
+    border-radius: 0;
+  }
+}
