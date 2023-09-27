@@ -2,7 +2,7 @@ import Taro, { request, showToast } from "@tarojs/taro";
 import { RequestConfig, ResponseConfig, ResponseType } from "./types/index.d";
 import getkey from "./config";
 
-const ERR_MESSAGE = '网络异常，请重试';
+const ERR_MESSAGE = "网络异常，请重试";
 
 class Api {
   protected baseUrl: string = process.env.BASE_URL;
@@ -82,13 +82,9 @@ class Api {
           switch (err.statusCode) {
             case 401:
               message = ERR_MESSAGE;
-
               break;
             default:
-              message =
-                err?.data?.errorMessage ||
-                err?.message ||
-                ERR_MESSAGE;
+              message = err?.data?.errorMessage || err?.message || ERR_MESSAGE;
               break;
           }
           if (isShowToast) showToast({ title: message, icon: "none" });

@@ -22,8 +22,11 @@
 <script setup lang="ts">
 
 /**
+ * title 标题
  * background 背景色
  * isSpace 是否占位
+ * left 左侧插槽
+ * center 中间插槽
  */
 interface TabbarProps {
   title?: string,
@@ -49,7 +52,7 @@ const headerStyles = computed(() => {
   return {
     height: `${systemInfo.custonBarHeight}PX`,
     paddingTop: `${systemInfo.statusBarHeight}PX`,
-    background: props?.background || '#fff'
+    background: props.background
   }
 })
 

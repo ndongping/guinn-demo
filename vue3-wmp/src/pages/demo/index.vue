@@ -8,7 +8,7 @@
           <swiper class="swiper">
             <swiper-item class="item" v-for="(item2, index2) in [1, 2, 3, 4, 5, 6, 7]" :key="index2">
               <view v-if="index2 === 0" class="test">水果</view>
-              <image v-else mode="widthFix" :src="'https://picsum.photos/750/1640?random=' + index + 2" />
+              <image v-else mode="widthFix" :src="'https://picsum.photos/750/1640?random=' + index2 + 2" />
             </swiper-item>
           </swiper>
         </view>
@@ -34,7 +34,7 @@ useDidShow(() => {
 
 useLoad(() => {
   console.log('================================', HOME_KEY)
-  product.getPruductDetail({ids: 204}).then(res => {
+  product.getPruductDetail({ids: '204'}).then(res => {
     console.log(res)
   })
 })
