@@ -2,10 +2,16 @@
   <view>
     <view class="navbar" :style="headerStyles">
       <view class="navbar-left" :style="{ width: `${systemInfo.leftWidth}PX` }">
-        <view @Tap="handleGoBack">back</view>
+        <template v-if="slotLeft">
+          <slot name="left"></slot>
+        </template>
+        <view v-else @Tap="handleGoBack">back</view>
       </view>
       <view class="navbar-center">
-        <slot></slot>
+        <template v-if="slotCenter">
+          <slot name="center"></slot>
+        </template>
+        <view v-else class="title">{{ props.title }}</view>
       </view>
       <view class="navbar-right" :style="{ width: `${systemInfo.leftWidth}PX` }"></view>
     </view>
@@ -20,20 +26,24 @@
  * isSpace 是否占位
  */
 interface TabbarProps {
+  title?: string,
   background?: string,
   isSpace?: boolean,
 }
-import { computed } from 'vue';
-import { useAppStore } from '@/stores/app';
 import { navigateBack } from '@tarojs/taro';
+import { computed, useSlots } from 'vue';
+
+import { useAppStore } from '@/stores/app';
 
 const props = withDefaults(defineProps<TabbarProps>(), {
   background: '#FFF',
   isSpace: true,
+  title: '',
 })
 
+const slotLeft = !!useSlots().left;
+const slotCenter = !!useSlots().center;
 const { systemInfo } = useAppStore();
-
 
 const headerStyles = computed(() => {
   return {
@@ -56,7 +66,7 @@ const handleGoBack = () => {
   left: 0;
   width: 100vw;
   height: 84PX;
-  z-index: 10;
+  z-index: $zindex-navbar;
   display: flex;
   align-items: center;
   flex-shrink: 0;

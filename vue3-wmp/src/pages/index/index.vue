@@ -1,7 +1,7 @@
 <template>
   <view class="index">
     <Navbar background="pink">
-      <template>
+      <template #center>
         <h1>Here might be a page title</h1>
       </template>
     </Navbar>

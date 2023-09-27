@@ -8,7 +8,7 @@ declare module '*.less';
 declare module '*.scss';
 declare module '*.sass';
 declare module '*.styl';
-
+declare const HOME_KEY: string;
 // @ts-ignore
 declare const process: {
   env: {

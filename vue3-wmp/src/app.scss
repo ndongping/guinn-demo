@@ -7,8 +7,10 @@ scroll-view,
 navigator {
   box-sizing: border-box;
   font-family: 'SourceHanSansCN Regular', 'PingFang SC';
-  color: #000000;
+  color: $default-black;
   font-size: 28rpx;
+  margin: 0;
+  padding: 0;
 }
 
 input,
@@ -27,7 +29,7 @@ video {
   width: 100%;
 }
 
-scroll-view {
+.scroll-view {
   ::-webkit-scrollbar {
     width: 0;
     height: 0;
@@ -35,11 +37,9 @@ scroll-view {
   }
 }
 
-.c-btn {
+.btn {
   background: unset;
   border-radius: 0;
-  margin: 0;
-  padding: 0;
   line-height: inherit;
   display: flex;
   align-items: center;
