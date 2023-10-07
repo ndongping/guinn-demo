@@ -34,7 +34,7 @@ export default defineConfig(({ mode }) => {
       open: true,
       proxy: {
         "/dev-api": {
-          target: "https://apiuat.sisley.com.cn",
+          target: "",
           changeOrigin: true,
           rewrite: (p) => p.replace(/^\/dev-api/, ""),
         },

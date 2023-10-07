@@ -1,7 +1,7 @@
 module.exports = {
   env: {
     NODE_ENV: '"production"',
-    BASE_URL: '"https://apiuat.sisley.com.cn"'
+    BASE_URL: '""'
   },
   defineConstants: {
     HOME_KEY: '"home-page-prod"'
