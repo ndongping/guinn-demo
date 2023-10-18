@@ -1,0 +1,92 @@
+.login-mcn {
+	width: 100vw;
+	min-height: 100vh;
+	padding-top: 36rpx;
+	padding-bottom: 200rpx;
+	background: linear-gradient(to bottom, #f7f7f7, #f5f6f4, #ebf3e4);
+  
+	.logo {
+	  width: 180rpx;
+	  margin-left: 42rpx;
+	}
+  
+	.mcn-container {
+	  padding-top: 154rpx;
+  
+	  .title-icon {
+		width: 190rpx;
+		margin-left: 80rpx;
+	  }
+  
+	  .title {
+		padding: 40rpx 0 48rpx 80rpx;
+		font-size: 40rpx;
+	  }
+	}
+  
+	.btn-view {
+	  padding-top: 76rpx;
+	}
+  
+	.cy-form {
+	  padding: 0 80rpx;
+  
+	  .van-cell {
+		display: block;
+		padding: 62rpx 0 18rpx;
+  
+		&.bor-bn {
+		  &::after {
+			border-bottom: none;
+		  }
+		}
+	  }
+	}
+  
+	.file-view {
+	  display: flex;
+	  align-items: flex-end;
+  
+	  .view-upload {
+		width: 132rpx;
+		height: 132rpx;
+  
+		.img {
+		  width: 100%;
+		  height: 100%;
+		  object-fit: contain;
+		}
+  
+	  }
+  
+	  .view-down {
+		padding: 0 0 28rpx 48rpx;
+		text-decoration: underline;
+		font-size: 24rpx;
+	  }
+	}
+  
+	.privacy {
+	  padding-top: 106rpx;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+  
+	  .txt {
+		font-size: 24rpx;
+		letter-spacing: 2rpx;
+	  }
+  
+	  .ratio {
+		width: 28rpx;
+		height: 28rpx;
+		border: 2rpx solid #acacac;
+		border-radius: 50%;
+		margin-left: 20rpx;
+  
+		&.agree {
+		  background: var(--color-green);
+		}
+	  }
+	}
+  }

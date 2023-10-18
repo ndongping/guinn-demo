@@ -12,6 +12,27 @@
       "list": [
         {
           "name": "",
+          "pathName": "pages/login-mcn/login-mcn",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/login/login",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/agency/agency",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
           "pathName": "pages/task-detail/task-detail",
           "query": "",
           "launchMode": "default",

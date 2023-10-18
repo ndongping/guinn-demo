@@ -1,0 +1,8 @@
+
+  <view class="login">
+    <image src="/assets/images/login.jpg" mode="widthFix" />
+    <view class="btn-view">
+      <button class="btn btn-primary c-btn" data-type="mcn"  bind:tap="handleLogin">MCN 登录</button>
+      <button class="btn btn-default c-btn" data-type="daren"  bind:tap="handleLogin">达人 登录</button>
+    </view>
+  </view>

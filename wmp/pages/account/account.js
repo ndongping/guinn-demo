@@ -32,4 +32,10 @@ Page({
             },
         });
     },
+
+    handleAgency() {
+        wx.navigateTo({
+          url: '/pages/agency/agency',
+        })
+    }
 });

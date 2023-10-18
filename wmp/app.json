@@ -3,6 +3,10 @@
         "pages/home/home",
         "pages/account/account",
         "pages/task-detail/task-detail",
+        "pages/agency/agency",
+        "pages/login/login",
+        "pages/login-mcn/login-mcn",
+        "pages/login-daren/login-daren",
         "pages/web-view/web-view"
     ],
     "window": {

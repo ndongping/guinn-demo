@@ -1,0 +1,24 @@
+<view class="agency-view">
+	<view class="num-all">达人粉丝数：8</view>
+	<view class="agency-list">
+		<view class="list-li" wx:for="{{list}}" wx:key="index">
+			<view class="avator">
+				<image src="/assets/images/avator.png" mode="widthFix" />
+			</view>
+			<view class="msg">
+				<view class="name">小森森baby</view>
+				<view class="code">小红书ID: 12341234</view>
+			</view>
+			<view class="num-view">
+				<view class="num">100w</view>
+				<view class="txt">粉丝数</view>
+			</view>
+			<view class="edit">
+				<image src="/assets/icons/edit.png" mode="widthFix" />
+			</view>
+		</view>
+	</view>
+	<view class="agency-footer">
+		<button class="btn c-btn btn-default" bind:tap="handleSunmit">去接单</button>
+	</view>
+</view>

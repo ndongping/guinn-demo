@@ -1,0 +1,59 @@
+<view class="login-mcn">
+	<view class="logo">
+		<image src="/assets/icons/logo.png" mode="widthFix" />
+	</view>
+	<view class="mcn-container">
+		<view class="title-icon">
+			<image src="/assets/icons/hello.png" mode="widthFix" />
+		</view>
+		<view class="title">
+			欢迎登录达人合作平台
+		</view>
+		<view class="cy-form">
+			<view class="van-cell">
+				<view class="van-field__label">{{signType}}</view>
+				<view class="van-input">
+					<input type="text" placeholder="必填" />
+				</view>
+			</view>
+			<view class="van-cell">
+				<view class="van-field__label">电话：</view>
+				<view class="van-input">
+					<input type="number" maxlength="11" placeholder="必填" />
+				</view>
+			</view>
+			<view class="van-cell">
+				<view class="van-field__label">邮箱：</view>
+				<view class="van-input">
+					<input type="text" placeholder="必填" />
+				</view>
+			</view>
+			<view class="btn-view">
+				<button class="btn c-btn btn-default" bind:tap="onSubmit">点击提交</button>
+			</view>
+			<view class="privacy">
+				<text class="txt" click="handleGoPrivacy">授权条款</text>
+				<view :class="['ratio', isAgree ? 'agree' : '']" click="handleCkeckPrivacy"></view>
+			</view>
+		</view>
+	</view>
+	<pop-center wx:if="{{show}}">
+		<view class="pup-content">
+			<image class="pup-bg" src="/assets/icons/pup-bg.png" mode="widthFix" />
+			<view class="pup-header">
+				<view class="icon">
+					<image src="/assets/icons/agree.png" mode="widthFix" />
+				</view>
+				<view class="title">
+					感谢入驻！
+				</view>
+			</view>
+			<view class="desc">我们将尽快核实您的信息</view>
+			<view class="tips">
+				<text>提示：</text>
+				<text>回到个人中心完善更多信息 </text>
+			</view>
+			<button class="btn pop-btn btn-default c-btn" catch:tap="handleConfirm">确 认</button>
+		</view>
+	</pop-center>
+</view>

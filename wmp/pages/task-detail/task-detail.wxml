@@ -5,37 +5,37 @@
 			<view class="time">截止日期2023-12-01</view>
 			<view class="task-ul">
 				<view class="task-li">
-					<span class="title">博主类型:</span>
-					<span class="tag">种草</span>
+					<text class="title">博主类型:</text>
+					<text class="tag">种草</text>
 				</view>
 				<view class="task-li">
-					<span class="title">图文/视频：</span>
-					<span class="desc">图文</span>
+					<text class="title">图文/视频：</text>
+					<text class="desc">图文</text>
 				</view>
 				<view class="task-li">
-					<span class="title">单品/合集：</span>
-					<span class="desc">单品</span>
+					<text class="title">单品/合集：</text>
+					<text class="desc">单品</text>
 				</view>
 				<view class="task-li">
-					<span class="title">报名人数：</span>
-					<span class="desc">88人</span>
-					<span class="desc__gray">名额100人</span>
+					<text class="title">报名人数：</text>
+					<text class="desc">88人</text>
+					<text class="desc__gray">名额100人</text>
 				</view>
 				<view class="task-li">
-					<span class="title">品牌名称：</span>
-					<span class="desc">暂不公开</span>
+					<text class="title">品牌名称：</text>
+					<text class="desc">暂不公开</text>
 				</view>
 				<view class="task-li">
-					<span class="title">粉丝要求：</span>
-					<span class="desc">1k-3w</span>
+					<text class="title">粉丝要求：</text>
+					<text class="desc">1k-3w</text>
 				</view>
 				<view class="task-li">
-					<span class="title">稿费：</span>
-					<span class="desc">800~1k</span>
+					<text class="title">稿费：</text>
+					<text class="desc">800~1k</text>
 				</view>
 				<view class="task-li">
-					<span class="title">国家名：</span>
-					<span class="desc">中国大陆</span>
+					<text class="title">国家名：</text>
+					<text class="desc">中国大陆</text>
 				</view>
 			</view>
 		</view>
@@ -44,24 +44,24 @@
 		<view class="msg-header">通告详情</view>
 		<view class="msg-ul">
 			<view class="task-li">
-				<span class="title">通告明细：</span>
-				<span class="desc">KISSME眼线笔-小红书</span>
+				<text class="title">通告明细：</text>
+				<text class="desc">KISSME眼线笔-小红书</text>
 			</view>
 			<view class="task-li">
-				<span class="title">达人预算：</span>
-				<span class="desc">0-2k</span>
+				<text class="title">达人预算：</text>
+				<text class="desc">0-2k</text>
 			</view>
 			<view class="task-li">
-				<span class="title">达人粉丝量级：</span>
-				<span class="desc">1k-3w</span>
+				<text class="title">达人粉丝量级：</text>
+				<text class="desc">1k-3w</text>
 			</view>
 			<view class="task-li">
-				<span class="title">达人类型：</span>
-				<span class="desc">美妆、妆教、好物分享、VLOG、时尚穿搭、颜值、COS等</span>
+				<text class="title">达人类型：</text>
+				<text class="desc">美妆、妆教、好物分享、VLOG、时尚穿搭、颜值、COS等</text>
 			</view>
 			<view class="task-li">
-				<span class="title">合作档期：</span>
-				<span class="desc">10月</span>
+				<text class="title">合作档期：</text>
+				<text class="desc">10月</text>
 			</view>
 		</view>
 		<view class="banner">

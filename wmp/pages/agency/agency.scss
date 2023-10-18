@@ -1,0 +1,91 @@
+.agency-view {
+    background: #f7f7f7;
+    padding: 40rpx 12rpx;
+    min-height: calc(100vh - 224rpx);
+    padding-bottom: 320rpx;
+
+    .num-all {
+        padding-left: 36rpx;
+        margin-bottom: 28rpx;
+        font-size: 32rpx;
+    }
+
+    .agency-list {
+        .list-li {
+            display: flex;
+            background: #fff;
+            overflow: hidden;
+            border-radius: 20rpx;
+            padding: 48rpx 38rpx 48rpx 44rpx;
+            box-shadow: 0 4rpx 24rpx 0 rgba(0, 0, 0, 0.1);
+            margin-bottom: 24rpx;
+            .avator {
+                width: 130rpx;
+                height: 130rpx;
+                border-radius: 50%;
+                overflow: hidden;
+                flex-shrink: 0;
+            }
+            .msg {
+                flex: 1;
+                padding-left: 26rpx;
+                padding-right: 20rpx;
+                padding-bottom: 20rpx;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                .name {
+                    font-size: 36rpx;
+                    margin-bottom: 12rpx;
+                    width: 256rpx;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+                .code {
+                    color: #9e9e9e;
+                    font-size: 20rpx;
+                }
+            }
+            .num-view {
+                width: 184rpx;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+                padding-bottom: 20rpx;
+                flex-shrink: 0;
+                .num {
+                    color: var(--color-green);
+                    font-size: 36rpx;
+                    font-weight: bold;
+                }
+                .txt {
+                    font-size: 20rpx;
+                }
+            }
+            .edit {
+                width: 32rpx;
+                height: 32rpx;
+                margin-bottom: 28rpx;
+                align-self: flex-end;
+                flex-shrink: 0;
+            }
+        }
+    }
+
+    .agency-footer {
+        height: 224rpx;
+        position: fixed;
+        z-index: 10;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #f7f7f7;
+        box-shadow: 0 -6rpx 16rpx 0 rgba(0, 0, 0, 0.08),
+            0 -3rpx 6rpx -4rpx rgba(0, 0, 0, 0.12),
+            0 -9rpx 28rpx 8rpx rgba(0, 0, 0, 0.05);
+        padding: 46rpx 96rpx 0;
+    }
+}

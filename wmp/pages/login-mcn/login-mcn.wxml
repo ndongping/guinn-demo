@@ -1,0 +1,85 @@
+<view class="login-mcn">
+	<view class="logo">
+		<image src="/assets/icons/logo.png" mode="widthFix" />
+	</view>
+	<view class="mcn-container">
+		<view class="title-icon">
+			<image src="/assets/icons/hello.png" mode="widthFix" />
+		</view>
+		<view class="title">
+			欢迎登录达人合作平台
+		</view>
+		<view class="cy-form">
+			<view class="van-cell">
+				<view class="van-field__label">机构名称：</view>
+				<view class="van-input">
+					<input type="text" placeholder="必填" />
+				</view>
+			</view>
+			<view class="van-cell">
+				<view class="van-field__label">电话：</view>
+				<view class="van-input">
+					<input type="number" maxlength="11" placeholder="必填" />
+				</view>
+			</view>
+			<view class="van-cell">
+				<view class="van-field__label">邮箱：</view>
+				<view class="van-input">
+					<input type="text" placeholder="必填" />
+				</view>
+			</view>
+			<view class="van-cell">
+				<view class="van-field__label">组织机构代码：</view>
+				<view class="van-input">
+					<input type="text" placeholder="必填" />
+				</view>
+			</view>
+			<view class="van-cell bor-bn">
+				<view class="van-field__label">
+					<text>营业执照上传：</text>
+				</view>
+				<view class="file-view">
+					<view class="view-upload">
+						<!-- <van-uploader :max-count="1" :max-size="3 * 1024 * 1024" oversize="onOversize" :after-read="afterRead">
+                  <block v-if="form.businessLicense != ''">
+                    <view class="preview-cover van-ellipsis">
+                      <image class="image" :src="form.businessLicense" mode="widthFix" / />
+                    </view>
+                  </bock>
+                  <view v-else>
+                    <image src="/assets/icons/upload1.png" mode="widthFix" />
+                  </view>
+                </van-uploader> -->
+					</view>
+					<view class="view-down">达人列表下载模版</view>
+				</view>
+			</view>
+			<view class="btn-view">
+				<button class="btn c-btn btn-default" bind:tap="onSubmit">点击提交</button>
+			</view>
+			<view class="privacy">
+				<text class="txt" click="handleGoPrivacy">授权条款</text>
+				<view class="ratio {{isAgree ? 'agree' : ''}}" bind:tap="handleCkeckPrivacy"></view>
+			</view>
+		</view>
+	</view>
+	<pop-center wx:if="{{show}}">
+		<view class="pup-content">
+			<image class="pup-bg" src="/assets/icons/pup-bg.png" mode="widthFix" />
+			<view class="pup-header">
+				<view class="icon">
+					<image src="/assets/icons/agree.png" mode="widthFix" />
+				</view>
+				<view class="title">
+					感谢入驻！
+				</view>
+			</view>
+			<view class="desc">我们将尽快核实您的信息</view>
+			<view class="tips">
+				<text>提示：</text>
+				<text>回到个人中心完善更多信息 </text>
+			</view>
+			<button class="btn pop-btn btn-default c-btn" catch:tap="handleConfirm">确 认</button>
+		</view>
+	</pop-center>
+</view>
