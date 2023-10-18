@@ -1,0 +1,16 @@
+<view class="wrap">
+    <view class="init">
+        <block wx:if="{{isPhoneX}}">
+            <view class="phoneX" style="background:{{barColor}};"></view>
+        </block>
+        <view id="content">
+            <slot></slot>
+        </view>
+    </view>
+</view>
+<view class="substance">
+    <view class="phoneX" wx:if="{{isPhoneX}}"></view>
+    <block wx:if="{{substance}}">
+        <view style="height:{{substance}}px;"></view>
+    </block>
+</view>

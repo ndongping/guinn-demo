@@ -1,0 +1,39 @@
+<view class="custom_nav" style="padding-top:{{headerHeight}}px;background:{{background}}">
+    <view class="title" style="height:{{titleHeight}}px;">
+        <!-- 左侧按钮区域 -->
+        <view class="title-left" style="width:{{navRight}}px;">
+            <!-- 返回上一级 -->
+            <block wx:if="{{slotLeft}}">
+                <slot name="left" />
+            </block>
+            <block wx:elif="{{pageIndex > 0}}">
+                <view class="go-back" catchtap="tapGoBack">
+                    <image class="image" mode="widthFix" src="/assets/imgs/back.png"></image>
+                </view>
+            </block>
+            <!-- 定制 -->
+            <block wx:elif="{{pageType == 'search'}}">
+                <view class="go-search" catchtap="tapGoSearch"></view>
+            </block>
+            <!-- 返回首页 -->
+            <block wx:else>
+                <view class="go-home" catchtap="tapGoHome">
+                    <image class="image" mode="widthFix" src="/assets/imgs/home.png"></image>
+                </view>
+            </block>
+        </view>
+        <!-- 中间标题区域 -->
+        <view class="header-title title-item" style="width:{{centerWidth}}px">
+            <block wx:if="{{title != ''}}">
+                {{title}}
+            </block>
+            <block wx:else>
+                <slot name="center"></slot>
+            </block>
+        </view>
+        <!-- 右边占位区域 -->
+        <view class="title-item" style="width:{{navRight}}px;"></view>
+    </view>
+</view>
+<!-- 顶部占位区域 -->
+<view wx:if="{{enableSeat}}" style="height:{{headerHeight + titleHeight}}px"></view>

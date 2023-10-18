@@ -1,0 +1,37 @@
+<view class="wrap-index">
+    <view class="list" wx:for="{{list}}" wx:key="index" bind:tap="handleGoDetail">
+        <view class="list-l">
+            <view class="l-name">
+                <view class="name-icon">
+                    <image class="image" wx:if="{{index < 2}}" src="/assets/icons/dy.jpg" alt="" />
+                    <image class="image" wx:else src="/assets/icons/xhs.png" alt="" />
+                </view>
+                <view class="name-txt">试用使用试用使用试用</view>
+            </view>
+            <view class="l-price">
+                <view class="price-icon">
+                    <image class="image" src="/assets/icons/rmb.png" alt="" />
+                </view>
+                <view class="price-txt">一口价 ￥100</view>
+            </view>
+            <view class="desc">
+                <span class="txt">品牌：新生儿礼盒</span>
+                <span class="txt">粉丝要求：1000-1w</span>
+            </view>
+            <view class="num">
+                <span class="tag">种草</span>
+                <view class="num-r">
+                    <view class="icon">
+                        <image class="image" src="/assets/icons/eye.png" alt="" />
+                    </view>
+                    <span class="num-txt">100</span>
+                </view>
+            </view>
+        </view>
+        <view class="list-r">
+            <image class="image" src="/assets/images/bg.png" alt="" />
+        </view>
+    </view>
+</view>
+
+<tabbar />

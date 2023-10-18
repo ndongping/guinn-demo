@@ -1,0 +1,89 @@
+<view class="task-detail">
+	<view class="task-banner">
+		<view class="banner-header">眼线笔试用招募中</view>
+		<view class="banner-body">
+			<view class="time">截止日期2023-12-01</view>
+			<view class="task-ul">
+				<view class="task-li">
+					<span class="title">博主类型:</span>
+					<span class="tag">种草</span>
+				</view>
+				<view class="task-li">
+					<span class="title">图文/视频：</span>
+					<span class="desc">图文</span>
+				</view>
+				<view class="task-li">
+					<span class="title">单品/合集：</span>
+					<span class="desc">单品</span>
+				</view>
+				<view class="task-li">
+					<span class="title">报名人数：</span>
+					<span class="desc">88人</span>
+					<span class="desc__gray">名额100人</span>
+				</view>
+				<view class="task-li">
+					<span class="title">品牌名称：</span>
+					<span class="desc">暂不公开</span>
+				</view>
+				<view class="task-li">
+					<span class="title">粉丝要求：</span>
+					<span class="desc">1k-3w</span>
+				</view>
+				<view class="task-li">
+					<span class="title">稿费：</span>
+					<span class="desc">800~1k</span>
+				</view>
+				<view class="task-li">
+					<span class="title">国家名：</span>
+					<span class="desc">中国大陆</span>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="detail-msg">
+		<view class="msg-header">通告详情</view>
+		<view class="msg-ul">
+			<view class="task-li">
+				<span class="title">通告明细：</span>
+				<span class="desc">KISSME眼线笔-小红书</span>
+			</view>
+			<view class="task-li">
+				<span class="title">达人预算：</span>
+				<span class="desc">0-2k</span>
+			</view>
+			<view class="task-li">
+				<span class="title">达人粉丝量级：</span>
+				<span class="desc">1k-3w</span>
+			</view>
+			<view class="task-li">
+				<span class="title">达人类型：</span>
+				<span class="desc">美妆、妆教、好物分享、VLOG、时尚穿搭、颜值、COS等</span>
+			</view>
+			<view class="task-li">
+				<span class="title">合作档期：</span>
+				<span class="desc">10月</span>
+			</view>
+		</view>
+		<view class="banner">
+			<image class="img" mode="widthFix" src="/assets/images/gg.png" alt="" />
+		</view>
+	</view>
+	<view class="detail-footer">
+		<button class="btn btn-default" bind:tap="handleSunmit">报名参加</button>
+	</view>
+	<pop-center wx:if="{{show}}" :close-on-click-overlay="false">
+		<view class="pup-content">
+			<image class="pup-bg" src="/assets/icons/pup-bg.png" mode="widthFix" />
+			<view class="pup-header">
+				<view class="icon">
+					<image mode="widthFix" src="/assets/icons/agree.png" />
+				</view>
+				<view class="title">
+					报名成功
+				</view>
+			</view>
+			<view class="desc">我们将尽快核实您的信息</view>
+			<button class="btn pop-btn btn-default" catch:tap="handleConfirm">确 认</button>
+		</view>
+	</pop-center>
+</view>

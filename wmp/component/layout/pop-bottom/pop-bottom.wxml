@@ -1,0 +1,5 @@
+<view class="popup" bind:tap="tapMask" data-tar="mask" style="z-index:{{zIndex}};">
+    <view class="content {{isPhoneX?'isx':''}}" catch:tap="tapPrevent">
+        <slot></slot>
+    </view>
+</view>

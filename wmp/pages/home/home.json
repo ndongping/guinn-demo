@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "navigationBarTitleText": "任务广场",
+    "usingComponents": {
+        "tabbar":"/component/view/tabbar/tabbar"
+    }
+}

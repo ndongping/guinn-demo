@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "navigationBarTitleText": "个人中心",
+  "usingComponents": {
+      "tabbar":"/component/view/tabbar/tabbar"
+  }
+}

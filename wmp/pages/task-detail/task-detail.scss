@@ -1,0 +1,131 @@
+.task-detail {
+	background: #f7f7f7;
+	padding: 16rpx 10rpx;
+	min-height: calc(100vh - 112rpx);
+	padding-bottom: 320rpx;
+  
+	.task-banner {
+	  background: #fff;
+	  border-radius: 20rpx;
+	  overflow: hidden;
+	  box-shadow: 0 4rpx 20rpx 0 rgba(0, 0, 0, 0.01);
+  
+	  .banner-header {
+		background: var(--color-green);
+		min-height: 102rpx;
+		padding: 6rpx 28rpx;
+		display: flex;
+		font-size: 32rpx;
+		align-items: center;
+		text-shadow: -2rpx 0 rgba(255, 255, 255, 1), 0 2rpx rgba(255, 255, 255, 1), 2rpx 0 rgba(255, 255, 255, 1), 0 -2rpx rgba(255, 255, 255, 1);
+		font-weight: bold;
+		letter-spacing: 1rpx;
+	  }
+  
+	  .banner-body {
+		padding: 50rpx 36rpx;
+  
+		.time {
+		  color: var(--color-orange);
+		  font-weight: bold;
+		  padding-bottom: 40rpx;
+		}
+  
+		.task-ul {
+		  .task-li {
+			display: flex;
+			align-items: center;
+			min-height: 52rpx;
+			margin-bottom: 4rpx;
+  
+			&:last-of-type {
+			  margin-bottom: 0;
+			}
+  
+			.title {
+			  color: #7f7f7f;
+			  min-width: 168rpx;
+			}
+  
+			.tag {
+			  background: #d0d0d0;
+			  padding: 0 20rpx;
+			  height: 52rpx;
+			  display: flex;
+			  align-items: center;
+			  border-radius: 52rpx;
+			  color: #525252;
+			}
+  
+			.desc__gray {
+			  color: #7f7f7f;
+			  margin-left: 20rpx;
+			}
+		  }
+		}
+	  }
+	}
+  
+	.detail-msg {
+	  padding: 38rpx 48rpx 40rpx;
+	  background: #fff;
+	  border-radius: 20rpx;
+	  overflow: hidden;
+	  margin-top: 28rpx;
+	  box-shadow: 0 4rpx 20rpx 0 rgba(0, 0, 0, 0.01);
+  
+	  .msg-header {
+		position: relative;
+		font-size: 32rpx;
+		font-weight: bold;
+		height: 56rpx;
+		display: flex;
+		align-items: center;
+  
+		&::after {
+		  content: '';
+		  width: 18rpx;
+		  height: 100%;
+		  background: var(--color-green);
+		  position: absolute;
+		  top: 0;
+		  left: -48rpx;
+		}
+	  }
+  
+	  .msg-ul {
+		padding-top: 70rpx;
+  
+		.task-li {
+		  line-height: 200%;
+  
+		  &:last-of-type {
+			margin-bottom: 0;
+		  }
+  
+		  .title {
+			color: #7f7f7f;
+			white-space: nowrap;
+		  }
+		}
+	  }
+  
+	  .banner {
+		padding-top: 20rpx;
+		margin-left: -8rpx;
+		margin-right: -8rpx;
+	  }
+	}
+  
+	.detail-footer {
+	  height: 224rpx;
+	  position: fixed;
+	  z-index: 10;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  background: #f7f7f7;
+	  box-shadow: 0 -12rpx 32rpx 0 rgba(0, 0, 0, 0.08), 0 -6rpx 12rpx -8rpx rgba(0, 0, 0, 0.12), 0 -9rpx 28rpx 8rpx rgba(0, 0, 0, 0.05);
+	  padding: 46rpx 96rpx 0;
+	}
+  }

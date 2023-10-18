@@ -1,0 +1,26 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/account/account",
+        "pages/task-detail/task-detail",
+        "pages/web-view/web-view"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "春芽",
+        "navigationBarTextStyle": "black"
+    },
+    "networkTimeout": {
+        "request": 120000
+    },
+    "usingComponents": {
+        "pop-top": "/component/layout/pop-top/pop-top",
+        "fixed-bottom": "/component/layout/fixed-bottom/fixed-bottom",
+        "pop-center": "/component/layout/pop-center/pop-center",
+        "pop-bottom":"/component/layout/pop-bottom/pop-bottom",
+        "header":"/component/view/header/header"
+    },
+    "sitemapLocation": "sitemap.json",
+    "lazyCodeLoading":"requiredComponents"
+}

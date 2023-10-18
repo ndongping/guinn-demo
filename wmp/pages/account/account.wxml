@@ -1,0 +1,45 @@
+<view class="login-mcn">
+    <view class="logo">
+        <image src="/assets/icons/logo.png" mode="widthFix" />
+    </view>
+    <view class="mcn-container">
+        <view class="upload-avator">
+            <button class="c-btn" open-type="chooseAvatar" bindchooseavatar="handleChooseAvatar">
+                <block wx:if="{{form.imageUrl != ''}}">
+                    <view class="preview-cover">
+                        <image src="{{form.imageUrl}}" mode="widthFix" />
+                    </view>
+                </block>
+                <block wx:else>
+                    <image src="/assets/icons/upload.png" mode="widthFix" />
+                </block>
+            </button>
+        </view>
+        <view class="cy-form">
+            <view class="van-cell">
+                <view class="van-field__label">达人昵称</view>
+                <view class="van-input">
+                    <input type="text" placeholder="达人昵称" />
+                </view>
+            </view>
+            <view class="van-cell">
+                <view class="van-field__label">小红书ID</view>
+                <view class="van-input">
+                    <input type="text" placeholder="小红书ID" />
+                </view>
+            </view>
+            <view class="van-cell">
+                <view class="van-field__label">粉丝数量</view>
+                <view class="van-input">
+                    <input type="number" placeholder="粉丝数量" />
+                </view>
+            </view>
+            <view class="btn-view">
+                <button class="btn c-btn btn-primary">修改信息</button>
+                <button class="btn c-btn btn-default">去接单</button>
+            </view>
+        </view>
+    </view>
+</view>
+
+<tabbar />

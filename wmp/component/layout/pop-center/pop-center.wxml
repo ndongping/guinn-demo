@@ -1,0 +1,5 @@
+<view class="wrap" bind:tap="tapMask" data-tar="mask" style="z-index:{{zIndex}}">
+    <view class="content" catch:tap="tapPrevent">
+        <slot></slot>
+    </view>
+</view>

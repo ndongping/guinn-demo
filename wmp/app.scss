@@ -1,0 +1,171 @@
+page {
+    --color-green: #75e511;
+    --color-base: #060a13;
+    --color-orange: #ffaf03;
+}
+
+page,
+view,
+text,
+button,
+video,
+map,
+scroll-view,
+swiper,
+input,
+textarea,
+navigator {
+    box-sizing: border-box;
+    background-origin: border-box;
+    isolation: isolate;
+    font-size: 28rpx;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Segoe UI, Arial, Roboto,
+        "PingFang SC", miui, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+}
+
+.c-btn {
+    background: unset;
+    border-radius: 0;
+    line-height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::after {
+        border: unset;
+        border-radius: 0;
+    }
+}
+
+image {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    vertical-align: top;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+
+// 按钮样式
+.btn {
+    border-radius: 190rpx;
+    margin-bottom: 50rpx;
+    letter-spacing: 4rpx;
+    text-indent: 4rpx;
+    font-weight: 500;
+    padding: 18rpx;
+}
+
+.btn-primary {
+    background-color: var(--color-base);
+    border: 2rpx solid var(--color-base);
+    color: #fff;
+}
+
+.btn-default {
+    color: #000;
+    background-color: var(--color-green);
+    border: 2rpx solid var(--color-base);
+}
+
+// 表单样式
+.cy-form {
+    padding: 0 40rpx;
+
+    .van-cell {
+        display: block;
+        padding: 62rpx 0 18rpx;
+        background-color: transparent;
+        border-bottom: 2rpx solid #acacac;
+        left: 0;
+
+        .van-field__label {
+            margin-bottom: 18rpx;
+            width: 100%;
+
+            .txt {
+                color: #000;
+            }
+        }
+
+        .van-field__control {
+            padding-left: 18rpx;
+            color: #555554;
+        }
+    }
+
+    .btn-view {
+        width: 100%;
+        padding-top: 80rpx;
+    }
+}
+
+.pup-content {
+    width: 696rpx;
+    height: 494rpx;
+    padding: 86rpx 80rpx 0;
+    position: relative;
+    .pup-bg {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 0;
+      z-index: -1;
+    }
+    .pup-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .icon {
+            width: 68rpx;
+
+            img {
+                vertical-align: top;
+            }
+        }
+
+        .title {
+            margin-left: 28rpx;
+            font-size: 48rpx;
+            font-weight: bold;
+            letter-spacing: 4rpx;
+            text-indent: 4rpx;
+        }
+    }
+
+    .desc {
+        font-size: 32rpx;
+        text-align: center;
+        padding: 36rpx 0 44rpx;
+        letter-spacing: 2rpx;
+    }
+
+    .tips {
+        text-align: center;
+
+        span {
+            color: #888888;
+
+            &:last-of-type {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .pop-btn {
+        position: absolute;
+        width: 540rpx;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 64rpx;
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,6 @@
+module.exports = {
+    kilobit:function(num){
+        var num = (num || 0).toLocaleString();
+        return num;
+    }
+}

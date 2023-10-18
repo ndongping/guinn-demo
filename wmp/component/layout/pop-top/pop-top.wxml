@@ -1,0 +1,8 @@
+<view class="wrap" style="background: {{bgColor}};">
+    <view id="content">
+        <slot></slot>
+    </view>
+</view>
+<view class="substance" wx:if="{{substance}}">
+    <view style="height:{{substance}}px;"></view>
+</view>

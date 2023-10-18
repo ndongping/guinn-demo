@@ -1,0 +1,62 @@
+.custom_nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background: #fff;
+    .iconLOGOshuban {
+        font-size: 48rpx;
+    }
+  
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        .title-left{
+          height: 100%;
+          display: flex;
+          align-items: center;
+          .go-back{
+            padding-left: 42rpx;
+            width: 48rpx;
+            .image{
+              width: 48rpx;
+            }
+          }
+          .go-search{
+            padding-left: 66rpx;
+            width: 38rpx;
+            color: #000;
+          }
+          .go-home{
+            padding-left: 42rpx;
+            width: 60rpx;
+            .image{
+              width: 60rpx;
+            }
+          }
+        }
+        .header-title{
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+    }
+    .leftNav{
+        width: 30rpx;
+        &.whiteNav{
+            text-shadow: 4rpx 4rpx 4rpx #999;
+        }
+    }
+    .leftNa{
+        width: 40rpx;
+        &.whiteNav{
+            text-shadow: 2rpx 2rpx 2rpx #999;
+        }
+    }
+  }
