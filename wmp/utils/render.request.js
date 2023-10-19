@@ -2,10 +2,10 @@ import Config from "../config";
 /*
 	let _data={};
 	App.request({
-		key: 'test', 
+		key: 'test',
 		data: _data,
 		success:()=>{
-		    
+
 		}
 	})
 */
@@ -86,7 +86,7 @@ function _requestStart(params) {
         wx.request(
             Object.assign(_obj, {
                 complete: (res) => {
-                    if (res.errMsg.indexOf("ok") >= 0) {
+                    if (res.status == 200) {
                         _requestEnd(params, res.data);
                         resolve(res.data);
                     } else {

@@ -5,9 +5,9 @@
     <view class="mcn-container">
         <view class="upload-avator">
             <button class="c-btn" open-type="chooseAvatar" bindchooseavatar="handleChooseAvatar">
-                <block wx:if="{{form.imageUrl != ''}}">
+                <block wx:if="{{form.headPicture != ''}}">
                     <view class="preview-cover">
-                        <image src="{{form.imageUrl}}" mode="widthFix" />
+                        <image src="{{form.headPicture}}" mode="widthFix" />
                     </view>
                 </block>
                 <block wx:else>
@@ -19,23 +19,23 @@
             <view class="van-cell">
                 <view class="van-field__label">达人昵称</view>
                 <view class="van-input">
-                    <input type="text" placeholder="达人昵称" />
+                    <input class="input" data-type="nickName" value="{{from.nickName}}" type="text" placeholder="达人昵称" bindinput="inputChange" type="nickname" bindblur="inputBlue" />
                 </view>
             </view>
             <view class="van-cell">
                 <view class="van-field__label">小红书ID</view>
                 <view class="van-input">
-                    <input type="text" placeholder="小红书ID" />
+                    <input class="input" data-type="userId" value="{{from.userId}}" type="text" placeholder="小红书ID" bindinput="inputChange" />
                 </view>
             </view>
             <view class="van-cell">
                 <view class="van-field__label">粉丝数量</view>
                 <view class="van-input">
-                    <input type="number" placeholder="粉丝数量" />
+                    <input class="input" data-type="fansNum" value="{{from.fansNum}}" type="number" placeholder="粉丝数量" bindinput="inputChange" />
                 </view>
             </view>
             <view class="btn-view">
-                <button class="btn c-btn btn-primary">修改信息</button>
+                <button class="btn c-btn btn-primary" bind:tap="onSubmit">修改信息</button>
                 <button class="btn c-btn btn-default" bind:tap="handleAgency">去接单</button>
             </view>
         </view>

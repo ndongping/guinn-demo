@@ -1,8 +1,8 @@
 .login-mcn {
     width: 100vw;
     min-height: 100vh;
-    padding-top: 36rpx;
-    padding-bottom: 200rpx;
+    padding-top: 32rpx;
+    padding-bottom: 60rpx;
     background: linear-gradient(to bottom, #f7f7f7, #f3f6f1);
 
     .logo {
@@ -11,7 +11,7 @@
     }
 
     .mcn-container {
-        padding-top: 88rpx;
+        padding-top: 88rpx 100rpx 0;
 
         .upload-avator {
             width: 152rpx;
@@ -32,20 +32,7 @@
     }
 
     .btn-view {
-        padding-top: 76rpx;
+        padding-top: 72rpx;
     }
 
-    .cy-form {
-
-        .van-cell {
-
-            .van-field__label {
-                span {
-                    font-weight: bold;
-                }
-
-            }
-        }
-
-    }
 }

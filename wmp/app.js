@@ -101,4 +101,10 @@ App({
             url: 'pages/home/home'
         });
     },
+    toast(title) {
+        wx.showToast({
+          title: title,
+          icon: 'none'
+        })
+    }
 })

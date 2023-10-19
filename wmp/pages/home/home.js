@@ -5,10 +5,16 @@ Page({
     },
 
     async onLoad(options) {
-        // const ret = await App.getLogin;
-        this.init();
-        // console.log(ret)
-        this.devDetail();
+        const ret = await App.getLogin;
+        console.log(ret)
+        if(ret.token) {
+            wx.reLaunch({
+              url: '/pages/login/login',
+            })
+        } else {
+            this.init();
+            this.devDetail();
+        }
     },
     init() {
         let _list = [];

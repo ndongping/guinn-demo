@@ -77,27 +77,34 @@ image {
 
 // 表单样式
 .cy-form {
-    padding: 0 40rpx;
+    padding: 0 100rpx;
 
     .van-cell {
         display: block;
-        padding: 62rpx 0 18rpx;
+        padding: 48rpx 0 10rpx;
         background-color: transparent;
         border-bottom: 2rpx solid #acacac;
         left: 0;
 
-        .van-field__label {
-            margin-bottom: 18rpx;
-            width: 100%;
+        &.no-bot{
+            border-bottom: none;
+        }
 
-            .txt {
-                color: #000;
-            }
+        .van-field__label {
+            margin-bottom: 30rpx;
+            width: 100%;
+            color: #000;
+            font-weight: bold;
         }
 
         .van-field__control {
             padding-left: 18rpx;
             color: #555554;
+        }
+        .van-input {
+            .input {
+                padding-left: 20rpx;
+            }
         }
     }
 

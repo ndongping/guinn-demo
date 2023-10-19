@@ -13,19 +13,19 @@
 			<view class="van-cell">
 				<view class="van-field__label">{{signType}}</view>
 				<view class="van-input">
-					<input type="text" placeholder="必填" />
+					<input data-type="userId" value="{{from.userId}}" bindinput="inputChange" class="input" type="text" placeholder="必填" />
 				</view>
 			</view>
 			<view class="van-cell">
 				<view class="van-field__label">电话：</view>
 				<view class="van-input">
-					<input type="number" maxlength="11" placeholder="必填" />
+					<input data-type="phone" value="{{from.phone}}" bindinput="inputChange" class="input" type="number" maxlength="11" placeholder="必填" />
 				</view>
 			</view>
 			<view class="van-cell">
 				<view class="van-field__label">邮箱：</view>
 				<view class="van-input">
-					<input type="text" placeholder="必填" />
+					<input data-type="email" value="{{from.email}}" bindinput="inputChange" class="input" type="text" placeholder="必填" />
 				</view>
 			</view>
 			<view class="btn-view">
@@ -33,7 +33,7 @@
 			</view>
 			<view class="privacy">
 				<text class="txt" click="handleGoPrivacy">授权条款</text>
-				<view :class="['ratio', isAgree ? 'agree' : '']" click="handleCkeckPrivacy"></view>
+				<view class="ratio {{isAgree ? 'agree' : ''}}" bind:tap="handleCkeckPrivacy"></view>
 			</view>
 		</view>
 	</view>

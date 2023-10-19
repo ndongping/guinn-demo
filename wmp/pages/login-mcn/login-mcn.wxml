@@ -13,43 +13,43 @@
 			<view class="van-cell">
 				<view class="van-field__label">机构名称：</view>
 				<view class="van-input">
-					<input type="text" placeholder="必填" />
+					<input data-type="organizationName" value="{{from.organizationName}}" bindinput="inputChange" class="input" type="text" placeholder="必填" />
 				</view>
 			</view>
 			<view class="van-cell">
 				<view class="van-field__label">电话：</view>
 				<view class="van-input">
-					<input type="number" maxlength="11" placeholder="必填" />
+					<input data-type="phone" value="{{from.phone}}" class="input" type="number" bindinput="inputChange" maxlength="11" placeholder="必填" />
 				</view>
 			</view>
 			<view class="van-cell">
 				<view class="van-field__label">邮箱：</view>
 				<view class="van-input">
-					<input type="text" placeholder="必填" />
+					<input data-type="email" value="{{from.email}}" class="input" type="text" bindinput="inputChange" placeholder="必填" />
 				</view>
 			</view>
-			<view class="van-cell">
+			<view class="van-cell no_bot">
 				<view class="van-field__label">组织机构代码：</view>
 				<view class="van-input">
-					<input type="text" placeholder="必填" />
+					<input data-type="organizationCode" value="{{from.organizationCode}}" bindinput="inputChange" class="input" type="text" placeholder="必填" />
 				</view>
 			</view>
-			<view class="van-cell bor-bn">
+			<view class="van-cell no-bot">
 				<view class="van-field__label">
 					<text>营业执照上传：</text>
 				</view>
 				<view class="file-view">
 					<view class="view-upload">
-						<!-- <van-uploader :max-count="1" :max-size="3 * 1024 * 1024" oversize="onOversize" :after-read="afterRead">
-                  <block v-if="form.businessLicense != ''">
-                    <view class="preview-cover van-ellipsis">
-                      <image class="image" :src="form.businessLicense" mode="widthFix" / />
-                    </view>
-                  </bock>
-                  <view v-else>
-                    <image src="/assets/icons/upload1.png" mode="widthFix" />
-                  </view>
-                </van-uploader> -->
+						<view bind:tap="handleUploadFile">
+							<block wx:if="{{form.businessLicense != ''}}">
+								<view class="preview-cover van-ellipsis">
+									<image class="image" :src="form.businessLicense" mode="widthFix" />
+								</view>
+							</block>
+							<view wx:else>
+								<image src="/assets/icons/upload1.png" mode="widthFix" />
+							</view>
+						</view>
 					</view>
 					<view class="view-down">达人列表下载模版</view>
 				</view>
@@ -58,7 +58,7 @@
 				<button class="btn c-btn btn-default" bind:tap="onSubmit">点击提交</button>
 			</view>
 			<view class="privacy">
-				<text class="txt" click="handleGoPrivacy">授权条款</text>
+				<text class="txt" bind:tap="handleGoPrivacy">授权条款</text>
 				<view class="ratio {{isAgree ? 'agree' : ''}}" bind:tap="handleCkeckPrivacy"></view>
 			</view>
 		</view>

@@ -12,6 +12,13 @@
       "list": [
         {
           "name": "",
+          "pathName": "pages/login-daren/login-daren",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
           "pathName": "pages/login-mcn/login-mcn",
           "query": "",
           "launchMode": "default",
