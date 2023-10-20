@@ -82,7 +82,7 @@
 					报名成功
 				</view>
 			</view>
-			<view class="desc">我们将尽快核实您的信息</view>
+			<view class="desc">我们会尽快与您取得联系</view>
 			<button class="btn pop-btn btn-default" catch:tap="handleConfirm">确 认</button>
 		</view>
 	</pop-center>

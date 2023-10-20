@@ -3,8 +3,8 @@
         <view class="list-l">
             <view class="l-name">
                 <view class="name-icon">
-                    <image class="image" wx:if="{{index < 2}}" src="/assets/icons/dy.jpg" alt="" />
-                    <image class="image" wx:else src="/assets/icons/xhs.png" alt="" />
+                    <image class="image" mode="widthFix" wx:if="{{index < 2}}" src="/assets/icons/dy.jpg" alt="" />
+                    <image class="image" mode="widthFix" wx:else src="/assets/icons/xhs.png" alt="" />
                 </view>
                 <view class="name-txt">试用使用试用使用试用</view>
             </view>
@@ -22,7 +22,7 @@
                 <span class="tag">种草</span>
                 <view class="num-r">
                     <view class="icon">
-                        <image class="image" src="/assets/icons/eye.png" alt="" />
+                        <image class="image" mode="widthFix" src="/assets/icons/eye.png" alt="" />
                     </view>
                     <span class="num-txt">100</span>
                 </view>

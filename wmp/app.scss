@@ -86,12 +86,12 @@ image {
         border-bottom: 2rpx solid #acacac;
         left: 0;
 
-        &.no-bot{
+        &.no-bot {
             border-bottom: none;
         }
 
         .van-field__label {
-            margin-bottom: 30rpx;
+            margin-bottom: 16rpx;
             width: 100%;
             color: #000;
             font-weight: bold;
@@ -117,14 +117,14 @@ image {
 .pup-content {
     width: 696rpx;
     height: 494rpx;
-    padding: 86rpx 80rpx 0;
+    padding: 100rpx 80rpx 0;
     position: relative;
     .pup-bg {
-      position: absolute;
-      width: 100%;
-      left: 0;
-      top: 0;
-      z-index: -1;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: -1;
     }
     .pup-header {
         display: flex;
@@ -141,7 +141,7 @@ image {
 
         .title {
             margin-left: 28rpx;
-            font-size: 48rpx;
+            font-size: 38rpx;
             font-weight: bold;
             letter-spacing: 4rpx;
             text-indent: 4rpx;
