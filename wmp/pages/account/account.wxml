@@ -35,8 +35,8 @@
                 </view>
             </view>
             <view class="btn-view">
-                <button class="btn c-btn btn-primary" bind:tap="onSubmit">修改信息</button>
-                <button class="btn c-btn btn-default" bind:tap="handleAgency">去接单</button>
+                <button class="btn btn-primary" bind:tap="onSubmit">修改信息</button>
+                <button class="btn btn-default" bind:tap="handleAgency">去接单</button>
             </view>
         </view>
     </view>

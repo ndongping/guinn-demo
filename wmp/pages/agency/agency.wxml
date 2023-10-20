@@ -19,6 +19,6 @@
 		</view>
 	</view>
 	<view class="agency-footer">
-		<button class="btn c-btn btn-default" bind:tap="handleSunmit">去接单</button>
+		<button class="btn btn-default" bind:tap="handleSunmit">去接单</button>
 	</view>
 </view>

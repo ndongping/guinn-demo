@@ -29,7 +29,7 @@
 				</view>
 			</view>
 			<view class="btn-view">
-				<button class="btn c-btn btn-default" bind:tap="onSubmit">点击提交</button>
+				<button class="btn btn-default" bind:tap="onSubmit">点击提交</button>
 			</view>
 			<view class="privacy">
 				<text class="txt" click="handleGoPrivacy">授权条款</text>
@@ -53,7 +53,7 @@
 				<text>提示：</text>
 				<text>回到个人中心完善更多信息 </text>
 			</view>
-			<button class="btn pop-btn btn-default c-btn" catch:tap="handleConfirm">确 认</button>
+			<button class="btn pop-btn btn-default" catch:tap="handleConfirm">确 认</button>
 		</view>
 	</pop-center>
 </view>

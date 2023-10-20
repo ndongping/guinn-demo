@@ -5,6 +5,7 @@ Page({
     },
 
     async onLoad(options) {
+        this.init();
         const ret = await App.getLogin;
         console.log(ret)
         if(ret.token) {
@@ -13,19 +14,17 @@ Page({
             })
         } else {
             this.init();
-            this.devDetail();
         }
     },
     init() {
+        this.devDetail();
         let _list = [];
-        setTimeout(() => {
             for (let i = 0; i < 20; i++) {
                   _list.push(i);
             }
             this.setData({
                 list: _list,
             });
-        }, 1000);
     },
     devDetail() {
         App.request({

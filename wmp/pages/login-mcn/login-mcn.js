@@ -82,5 +82,8 @@ Page({
 
     onSubmit() {
         console.log(this.data.form)
+        this.setData({
+            show: true
+        })
     }
 });
