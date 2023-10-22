@@ -24,13 +24,13 @@ function _initial(params) {
     let _params = {
         url: null, //请求地址
         key: null, //未设置key时，url为必填
-        method: "POST", //请求的类型,默认POST， 如果是GET方式，需要参数设置
+        method: "POST", //请求的类型,默认POST
         header: null,
         data: {}, //提交参数
         getData: null,
         dataType: "json", //返回的数据格式
         responseType: "text", //设置响应的数据类型。合法值：text、arraybuffer
-        isLoading: true, //默认显示加载蒙版（防多重点击）
+        isLoading: true, //默认显示加载蒙版
         success: null, //接口成功回调
         fail: null, //接口失败回调
         complete: null, //接口完成回调
